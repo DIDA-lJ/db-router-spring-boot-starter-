@@ -1,5 +1,8 @@
 # db-router-spring-boot-starter
-db-router-spring-boot-starter
+## 数据库路由组件流程图
+![image](https://github.com/DIDA-lJ/db-router-spring-boot-starter-/assets/97254796/46f3e97e-9dde-4471-815f-03224e6614da)
+
+
 ## 更新
 ### 数据库连接池支持
 - 实现分库全局配置
