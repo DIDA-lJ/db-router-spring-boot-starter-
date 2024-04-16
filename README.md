@@ -1,9 +1,18 @@
 # db-router-spring-boot-starter
+## 简介
+开发一个基于 HashMap 核心设计原理，使用哈希散列+扰动函数的方式，把数据散列到多个库表中的组件，并验证使用。
+## 更新日志
+- 9月22日，新增数据库路由组件开发工程 db-router-spring-boot-starter 这是一个自研的分库分表组件。主要用到的技术点包括：散列算法、数据源切换、AOP切面、SpringBoot Starter 开发等
+- 9月22日，完善分库中表信息，user_take_activity、user_take_activity_count、user_strategy_export_001~004，用于测试验证数据库路由组件
+- 9月30日，基于Mybatis拦截器对数据库路由分表使用方式进行优化，减少用户在使用过程中需要对数据库语句进行硬编码处理
+  
 ## 数据库路由组件流程图
 ![image](https://github.com/DIDA-lJ/db-router-spring-boot-starter-/assets/97254796/46f3e97e-9dde-4471-815f-03224e6614da)
 
 
-## 更新
+
+
+## 使用方法
 ### 数据库连接池支持
 - 实现分库全局配置
 配置mini-db-router.jdbc.datasource.global全局属性,如果db没有这个属性,则取全局,
