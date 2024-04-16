@@ -6,10 +6,13 @@
 - 9月22日，完善分库中表信息，user_take_activity、user_take_activity_count、user_strategy_export_001~004，用于测试验证数据库路由组件
 - 9月30日，基于Mybatis拦截器对数据库路由分表使用方式进行优化，减少用户在使用过程中需要对数据库语句进行硬编码处理
   
-## 数据库路由组件流程图
+## 数据库路由组件原理
+### 数据库路由组件流程图
+主要通过借鉴 HashMap 进行哈希散列 + 扰动函数计算的原理，进行对应的路由计算
 ![image](https://github.com/DIDA-lJ/db-router-spring-boot-starter-/assets/97254796/46f3e97e-9dde-4471-815f-03224e6614da)
-
-
+### 数据库路由计算原理图
+先利用哈希函数进行数据库路由的计算，再有对应的节点映射到对应的库表
+![image](https://github.com/DIDA-lJ/db-router-spring-boot-starter-/assets/97254796/1830b538-333a-4e34-90a6-c2766bde2c58)
 
 
 ## 使用方法
